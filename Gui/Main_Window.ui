@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Youcan_project</class>
+ <widget class="QMainWindow" name="Youcan_project">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1821</width>
+    <height>2137</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="verticalStackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>1631</width>
+      <height>2031</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="verticalStackedWidgetPage_1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_original">
+          <item>
+           <widget class="QPushButton" name="add_image_but">
+            <property name="text">
+             <string>add</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="change_img_rgb_but">
+            <property name="text">
+             <string>rgb</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="change_img_gt_but">
+            <property name="text">
+             <string>gt</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="page1_edge_button">
+              <property name="text">
+               <string>ed</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_threshold_all">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>255</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QSpinBox" name="page1_backgroundColor_b_Spinbox">
+              <property name="maximum">
+               <number>255</number>
+              </property>
+              <property name="value">
+               <number>120</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="page1_backgroundColor_g_Spinbox">
+              <property name="maximum">
+               <number>255</number>
+              </property>
+              <property name="value">
+               <number>200</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="page1_backgroundColor_r_Spinbox">
+              <property name="maximum">
+               <number>255</number>
+              </property>
+              <property name="value">
+               <number>150</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_ori_saveButton">
+            <property name="text">
+             <string>save</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_clear1_ori_button">
+            <property name="text">
+             <string>clear</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_excavate_0">
+            <property name="text">
+             <string>excavate_0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="3">
+         <layout class="QVBoxLayout" name="verticalLayout_Model1_loss">
+          <item>
+           <widget class="QPushButton" name="page1_clear_button_1">
+            <property name="text">
+             <string>clear</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_BCE_Model1">
+            <property name="text">
+             <string>BCE:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_BCE_Model1"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_IOU_Model1">
+            <property name="text">
+             <string>IOU:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_IOU_Model1"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_STRUT_Model1">
+            <property name="text">
+             <string>Struct</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_Struct_Model1"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_MAE_Model1">
+            <property name="text">
+             <string>MAE:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_MAE_Model1"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="image_model_1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>686</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>686</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="page1_ori_image_Qlabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>686</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>686</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_Model_1">
+          <item>
+           <widget class="QComboBox" name="cod_model_select_box_Model_1">
+            <item>
+             <property name="text">
+              <string>Ours</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Model2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_02_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_03_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_01_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_31_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_29_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan_ual</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BGNet-change2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="result_select_box_model_1">
+            <item>
+             <property name="text">
+              <string>res3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res_5</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="process_but_model_1">
+            <property name="text">
+             <string>process_Model_1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_excavate_1">
+            <property name="text">
+             <string>excavate_1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_draw_Qlabel_1_button">
+            <property name="text">
+             <string>draw</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normalon>icons/colorBoard.png</normalon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_save_Qlabel_1_button">
+            <property name="text">
+             <string>save</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="page1_websearch_button">
+          <property name="text">
+           <string>webSearch</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>C:/Users/86139/Desktop/th.jpg</normaloff>C:/Users/86139/Desktop/th.jpg</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_1">
+        <item row="1" column="6">
+         <layout class="QVBoxLayout" name="verticalLayout_Model2_loss">
+          <item>
+           <widget class="QPushButton" name="page1_clear_button_2">
+            <property name="text">
+             <string>clear</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_BCE_Model2">
+            <property name="text">
+             <string>BCE:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_BCE_Model2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_IOU_Model2">
+            <property name="text">
+             <string>IOU:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_IOU_Model2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_STRUT_Model2">
+            <property name="text">
+             <string>Struct</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_Struct_Model2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_MAE_Model2">
+            <property name="text">
+             <string>MAE:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_MAE_Model2"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_Model3_loss">
+            <item>
+             <widget class="QPushButton" name="page1_clear_button_3">
+              <property name="text">
+               <string>clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_BCE_Model3">
+              <property name="text">
+               <string>BCE:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_BCE_Model3"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_IOU_Model3">
+              <property name="text">
+               <string>IOU:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_IOU_Model3"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_STRUT_Model3">
+              <property name="text">
+               <string>Struct</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_Struct_Model3"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_MAE_Model3">
+              <property name="text">
+               <string>MAE:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_MAE_Model3"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="image_model_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>686</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>686</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="4">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="image_model_3">
+          <property name="minimumSize">
+           <size>
+            <width>686</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>686</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_Model_2">
+          <item>
+           <widget class="QComboBox" name="cod_model_select_box_Model_2">
+            <item>
+             <property name="text">
+              <string>Model2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BGNet-ori</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_02_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_03_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_01_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_31_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_29_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan_ual</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BGNet-change2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="result_select_box_model_2">
+            <item>
+             <property name="text">
+              <string>res3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res_5</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="process_but_model_2">
+            <property name="text">
+             <string>process_Model_2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_excavate_2">
+            <property name="text">
+             <string>excavate_2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_draw_Qlabel_2_button">
+            <property name="text">
+             <string>draw</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normalon>icons/colorBoard.png</normalon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_save_Qlabel_2_button">
+            <property name="text">
+             <string>save</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="5">
+         <layout class="QHBoxLayout" name="horizontalLayout_Model_3">
+          <item>
+           <widget class="QComboBox" name="cod_model_select_box_Model_3">
+            <item>
+             <property name="text">
+              <string>BGNet</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BGNet-swin</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_02_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_2_03_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_31_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_29_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>_1_26_youcan_ual</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BGNet-change2</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="result_select_box_model_3">
+            <item>
+             <property name="text">
+              <string>res3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>res_5</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="process_but_model_3">
+            <property name="text">
+             <string>process_Model_3</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_excavate_3">
+            <property name="text">
+             <string>excavate_3</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_draw_Qlabel_3_button">
+            <property name="text">
+             <string>draw</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normalon>icons/colorBoard.png</normalon>
+             </iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="page1_save_Qlabel_3_button">
+            <property name="text">
+             <string>save</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="page1_show_merge_button">
+          <property name="text">
+           <string>show merge</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalStackedWidgetPage_2">
+     <widget class="QGroupBox" name="verticalGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>45</y>
+        <width>711</width>
+        <height>971</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_page2_1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLineEdit" name="page2_lineEdit_Model_1"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="page2_open_button_1">
+             <property name="text">
+              <string>open</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="page2_clear_button_1">
+             <property name="text">
+              <string>clear</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="page2_colorMap_button">
+             <property name="text">
+              <string>heatmap</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="page2_save_button_1">
+             <property name="text">
+              <string>save</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="page2_model_result_1">
+           <property name="minimumSize">
+            <size>
+             <width>686</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>686</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QScrollBar" name="verticalScrollBar_page_2">
+      <property name="geometry">
+       <rect>
+        <x>1460</x>
+        <y>0</y>
+        <width>20</width>
+        <height>1691</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1700</width>
+        <height>1700</height>
+       </size>
+      </property>
+      <property name="maximum">
+       <number>900</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+      <property name="pageStep">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>60</y>
+        <width>688</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLineEdit" name="page2_lineEdit_ori_1"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="page2_open_button_2">
+           <property name="text">
+            <string>open</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="page2_search_button_1">
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="page2_ori_RGBimage_Qlabel_1">
+         <property name="minimumSize">
+          <size>
+           <width>686</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>686</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::WinPanel</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="verticalStackedWidgetPage_3">
+     <widget class="QTableWidget" name="result_tabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>19</y>
+        <width>1621</width>
+        <height>1671</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>160</width>
+        <height>160</height>
+       </size>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="rowCount">
+       <number>1</number>
+      </property>
+      <property name="columnCount">
+       <number>1</number>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>118</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderHighlightSections">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <column/>
+     </widget>
+     <widget class="QPushButton" name="page_3_addRow">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>0</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add_row</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_addCol">
+      <property name="geometry">
+       <rect>
+        <x>1330</x>
+        <y>0</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add_col</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_delRow">
+      <property name="geometry">
+       <rect>
+        <x>1420</x>
+        <y>0</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Del_row</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_delCol">
+      <property name="geometry">
+       <rect>
+        <x>1510</x>
+        <y>0</y>
+        <width>93</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Del_col</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="page_3_width_fixed_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>0</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fixed</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_merge">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>0</y>
+        <width>93</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>merge</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_save">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>0</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_full_tabel_button">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>0</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>full</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page3_clear_all_button">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>0</y>
+        <width>93</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_page_3_size">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>0</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>50</number>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="value">
+       <number>120</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="page_3_full_tabel_col_button">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>0</y>
+        <width>93</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>full-col</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="page_3_tabel_head_checkbox">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>head-on</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar_page_1">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>0</y>
+      <width>20</width>
+      <height>1331</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>2000</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="pageStep">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar_page_3">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>0</y>
+      <width>20</width>
+      <height>1381</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1700</width>
+      <height>1700</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>1900</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="pageStep">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1821</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_codModel">
+    <property name="title">
+     <string>Model</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>C:/Users/86139/.designer/PyQt5-master/Chapter03/images/cartoon3.ico</normalon>
+     </iconset>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actioncod_model_expeiment"/>
+   </widget>
+   <widget class="QMenu" name="menu_codMerge">
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Merge the gt picture&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="accessibleName">
+     <string>Merge</string>
+    </property>
+    <property name="title">
+     <string>Merge</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>C:/Users/86139/.designer/PyQt5-master/Chapter03/images/cartoon4.ico</normalon>
+     </iconset>
+    </property>
+    <addaction name="actionresult_save"/>
+   </widget>
+   <widget class="QMenu" name="menushow_result">
+    <property name="title">
+     <string>show_result</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>C:/Users/86139/.designer/backup/icons/cartoon3.ico</normaloff>C:/Users/86139/.designer/backup/icons/cartoon3.ico</iconset>
+    </property>
+    <addaction name="page3"/>
+   </widget>
+   <addaction name="menu_codModel"/>
+   <addaction name="menu_codMerge"/>
+   <addaction name="menushow_result"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actioncod_model_expeiment">
+   <property name="text">
+    <string>cod_Model</string>
+   </property>
+  </action>
+  <action name="actionresult_save">
+   <property name="text">
+    <string>cod_resultMerge</string>
+   </property>
+  </action>
+  <action name="page3">
+   <property name="text">
+    <string>Model_show</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
