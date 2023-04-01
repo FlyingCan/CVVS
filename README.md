@@ -1,2 +1,2 @@
-# test
-项目描述
+# cvvs
+An interesting and useful visualization system
