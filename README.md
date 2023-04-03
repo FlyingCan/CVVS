@@ -8,7 +8,7 @@ Let's get started with the system!
 ![overview1](https://github.com/FlyingCan/CVVS/blob/main/Imges/overView1.jpg?raw=true)
 ***
 ![overview2](https://github.com/FlyingCan/CVVS/blob/main/Imges/overView2.jpg?raw=true)
-
+![overview3](https://github.com/FlyingCan/CVVS/blob/main/Imges/page4.gif?raw=true)
 ***
 ## Detailed function introduction
 ### 1. Extract object graph from background
